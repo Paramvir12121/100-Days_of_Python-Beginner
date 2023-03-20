@@ -25,13 +25,16 @@ rpc_array = ["""
       (____)
 ---.__(___)
 """]
+try:
+    print(f"You choose {rpc_array[player_choice]}")
+    print(f"Computer choose {rpc_array[computer_choice]}")
 
-print(f"You choose {rpc_array[player_choice]}")
-print(f"Computer choose {rpc_array[computer_choice]}")
+    if player_choice == computer_choice:
+        print("Its a draw")
+    elif (player_choice == 1 and computer_choice == 0) or (player_choice == 2 and computer_choice == 1) or (player_choice == 0 and computer_choice == 2):
+        print("You win")
+    elif (player_choice == 0 and computer_choice == 1) or (player_choice == 1 and computer_choice == 2) or (player_choice == 2 and computer_choice == 0):
+        print("You lose")
+except:
+    print("You typed an invalid number, you lose!")
 
-if player_choice == computer_choice:
-    print("Its a draw")
-elif (player_choice == 1 and computer_choice == 0) or (player_choice == 2 and computer_choice == 1) or (player_choice == 0 and computer_choice == 2):
-    print("You win")
-if (player_choice == 0 and computer_choice == 1) or (player_choice == 1 and computer_choice == 2) or (player_choice == 2 and computer_choice == 0):
-    print("You lose")
