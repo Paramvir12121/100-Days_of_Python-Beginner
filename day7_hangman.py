@@ -8,28 +8,28 @@ print(f"word chosen is {word_choice}")
 word_choice_len = len(word_choice)
 
 letter = input("Enter your guess letter: ").lower()
+
+#to create a a list of _ corresponding to choesn letter
+view_list = []
+num = 0
+while num < word_choice_len:
+    num += 1
+    view_list.append('_')
+print(view_list)
+
+
 #inputed letter is matched against the letters in chosen word
 position = 0
 positions = []
 for i in word_choice:
     if i==letter:
         print("match")
-        positions.append(position)
+        view_list[position]=letter 
     else:
         print("No Match")
     position += 1
 
-print("positions :",positions)
 
-def view_word(word_list_len,letter,positions):
-    view_list = []
-    num = 0
-    while num < word_list_len:
-        num += 1
-        view_list.append('_')
-    print(view_list)
-    
+print(view_list)
+ 
 
-
-print("world len list:",word_list_len)
-view_word(word_choice_len,letter,positions)
