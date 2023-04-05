@@ -15,7 +15,6 @@ password = ""
 num = 1
 while  no_of_alphabets + no_of_numbers + no_of_special_characters > 0:
     roll =  random.randint(0,2)
-    print(f"total characters before {no_of_alphabets + no_of_numbers + no_of_special_characters}")
     if roll == 0 and no_of_alphabets != 0:
         password += letters[random.randint(0,51)]
         no_of_alphabets = no_of_alphabets-1
@@ -25,7 +24,6 @@ while  no_of_alphabets + no_of_numbers + no_of_special_characters > 0:
     elif roll == 2 and no_of_special_characters !=0:
         password += special_characters[random.randint(0,12)]
         no_of_special_characters = no_of_special_characters-1
-    print(f"total characters {no_of_alphabets + no_of_numbers + no_of_special_characters}")
 
 print(f"Your password is {password}")
 
