@@ -1,15 +1,5 @@
 n = int(input("Enter your number: "))
-'''Dear Alexandru,
 
-I am writing to request a leave of absence from May 23, 2023, to June 24, 2023 due to my travel plans outside the country. 
-
-Could you please let me know what processes I need to follow to make sure that my leave request is properly documented and approved? Also, please let me know if there are any additional steps, I need to take to ensure a smooth transition during my absence.
-
-I understand that my absence may cause some inconvenience, and I apologize for any inconvenience caused. 
-
-Sincerely, 
-Paramvir Singh
-'''
 
 
 def prime_checker(n):
