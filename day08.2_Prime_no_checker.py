@@ -1,7 +1,3 @@
-n = int(input("Enter your number: "))
-
-
-
 def prime_checker(n):
     primeflag = True
     checker_no = 2
@@ -19,5 +15,6 @@ def prime_checker(n):
     else:
         print(f"{n} is a NOT Prime Number.")
 
+n = int(input("Enter your number: "))
 
 prime_checker(n)
