@@ -4,6 +4,8 @@ import random
 
 user_list = []
 user_list = data
+score = 0
+print(logo)
 
 def get_random(list):
     random_element = random.choice(list)
@@ -28,9 +30,11 @@ while True:
     seconds_followers = second_value['follower_count']
     if firsts_followers> seconds_followers and choice=='y' or firsts_followers< seconds_followers and choice=='n':
         result = True
+        score += 1
         print("You are correct!!!")
         print(f"{first_value['name']} has {first_value['follower_count']} Million followers.")
-        print(f"{second_value['name']} has {second_value['follower_count']} Million followers.\n\n\n")
+        print(f"{second_value['name']} has {second_value['follower_count']} Million followers.")
+        print("Your score is ",score,"\n\n\n")
         if firsts_followers < seconds_followers:
             first_value = second_value
         print(first_value['name'])
@@ -40,6 +44,6 @@ while True:
         print("Not Correct!!!")
         print(f"{first_value['name']} has {first_value['follower_count']} Million followers.")
         print(f"{second_value['name']} has {second_value['follower_count']} Million followers.")
-        print("You Lose!!!")
+        print("You Lose!!!\nYour score is",score)
         break
     
