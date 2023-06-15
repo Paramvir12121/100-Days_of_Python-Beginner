@@ -23,13 +23,12 @@ while is_on:
     elif order =="latte" or order =="espresso" or order =="cappuccino":
         drink = menu.find_drink(order) 
         if coffee_maker.is_resource_sufficient(drink) is True:
-            cost = int(input("Enter money $"))
-    #         if money_machine.make_payment(cost) is True:
-    #             print(f"Payment Sucess!!\nHere is your {order}")
-    #         else:
-    #             print("Payment Unsucesssful :(\nSorry that's not enough money. Money refunded.")
-    #     else:
-    #         print("Resourse not suffficent")
-    # 
-    # else:
-    #     print("Invalid Input! Try Again")
+            print("True if we have enough resources",coffee_maker.is_resource_sufficient(drink))
+            print(drink)
+            cost = drink.cost
+            if money_machine.make_payment(cost) is True:
+                print(f"Payment Sucess!!\nHere is your {order}")
+        else:
+            print("Resourse not suffficent")
+    else:
+        print("Invalid Input! Try Again")
