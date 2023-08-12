@@ -6,13 +6,7 @@ turtle.colormode(255)
 
 t = Turtle()
 screen = Screen()
-
-# color_array = ['blue','red','yellow','aquamarine','darkorange','lawngreen','maroon1','purple4','seagreen']
-angle_array = [0,90,180,270]
-
-t.ht()
 t.speed(0)
-t.width(15)
 
 def random_color():
     r = random.randint(0,255)
@@ -21,10 +15,13 @@ def random_color():
     color = (r,g,b)
     return color
 
-for _ in range(400):
-    t.left(random.choice(angle_array))
+
+for angle in range(0,360):
     t.color(random_color())
-    t.forward(30)
+    t.left(1)
+    r = 100
+    t.circle(r)
+
 
 
 
