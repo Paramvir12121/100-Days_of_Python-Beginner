@@ -16,4 +16,3 @@ for i in range(0,len(colors)):
 
 print(color_list)
 
-
