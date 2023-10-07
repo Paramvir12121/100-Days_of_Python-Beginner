@@ -38,9 +38,6 @@ Here's a list of notable projects developed during the course:
 - `Day11` - Simple Blackjack
 - ... (add more projects as you progress through the course)
 
-## ⚖️ License
-
-This project is under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## 🙏 Acknowledgments
 
