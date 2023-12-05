@@ -18,6 +18,21 @@ The "100 Days of Code: The Complete Python Pro Bootcamp for 2023" is an intensiv
 ## 📁 Repository Structure
 
 Each day of the course has its dedicated folder, named accordingly (`Day1`, `Day2`, ...). Inside each day's folder, you'll find the exercises, projects, and notes corresponding to that specific day's content.
+- Day 1 : Band Name Generator 
+- Day 2 : Bill Calculator
+- Day 3 : Adventure Game (If statements)
+- Day 4 : 
+- Day 5 :
+- Day 6 :
+- Day 7 :
+- Day 8 :
+- Day 9 :
+- Day 10 :
+- Day 11 :
+- Day 12 :
+- Day 13 :
+- Day 14 :
+- Day 15 :
 
 ## 🚀 Getting Started
 
