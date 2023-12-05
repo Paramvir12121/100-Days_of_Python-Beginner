@@ -21,11 +21,10 @@ Each day of the course has its dedicated folder, named accordingly (`Day1`, `Day
 - Day 1 : Band Name Generator 
 - Day 2 : Bill Calculator
 - Day 3 : Adventure Game (If statements)
-- Day 4 : 
-- Day 5 :
-- Day 6 :
-- Day 7 :
-- Day 8 :
+- Day 4 : Banker's Roulette & Rock, Paper, Scissors(Random library, While loop)
+- Day 5 : Password Generator (Arrays)
+- Day 7 : Hangman (Nested loops)
+- Day 8 : Ceaser Cypher (Manipulating Arrays)
 - Day 9 :
 - Day 10 :
 - Day 11 :
