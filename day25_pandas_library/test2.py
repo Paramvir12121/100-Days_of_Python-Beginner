@@ -27,4 +27,8 @@ temp_in_C = data[data.day == "Monday"]["temp"].to_list()
 
 temp_in_F = (1.8 * temp_in_C[0]) + 32
 
+# or 
+# monday = data[data.day == "Monday"]
+# monday_temp = monday.temp[0]
+
 print(temp_in_F)
