@@ -16,6 +16,11 @@ turtle.shape(image)
 # turtle.onscreenclick(get_mouse_click_coor)
 # turtle.mainloop()
 
+# pandas varible objects
+data = pandas.read_csv("50_states.csv")
+states = data["state"].to_list()
+
+print(states)
 
 end_toggle = False
 
@@ -24,6 +29,8 @@ while end_toggle == False:
     print(answer_state)
     if answer_state is None:
         end_toggle = True
+    # for state in data["state"]:
+    #     if answer_state == data
 
     
 
