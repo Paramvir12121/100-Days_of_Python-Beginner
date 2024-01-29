@@ -32,15 +32,26 @@ while end_toggle == False:
         end_toggle = True
     elif answer_state in data["state"].values:
         state_found.append(answer_state)
+        try:
+            states.remove(answer_state)
+        except:
+            pass
         x_value = data[data['state'] == answer_state]['x'].iloc[0]
         y_value = data[data['state'] == answer_state]['y'].iloc[0]
         print(f"State: {answer_state}, X: {x_value}, Y: {y_value}")
+        pen.penup()  # to ensure it doesn't draw a line while moving
+        pen.goto(x_value, y_value)  # replace x and y with your desired coordinates
+
+        # Write text at the current position
+        pen.write(answer_state, align="left", font=("Arial", 8, "normal"))
+
     else:
-        print("wrong input")
+        if answer_state in states:
+            print("State already found!")
+        else:
+            print("No state with this name") 
+
+
     
-
-
-
-
 
 screen.exitonclick()
