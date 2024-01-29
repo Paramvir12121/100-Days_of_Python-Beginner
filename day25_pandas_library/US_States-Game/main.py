@@ -10,13 +10,13 @@ screen.addshape(image)
 turtle.shape(image)
 
 
-# Code to get coordintes on the screen where mouse clickes
-# def get_mouse_click_coor(x,y):
+# Code to get coordinates on the screen where mouse clicks
+# def get_mouse_click_color(x,y):
 #     print(x,y)
-# turtle.onscreenclick(get_mouse_click_coor)
+# turtle.onscreenclick(get_mouse_click_color)
 # turtle.mainloop()
 
-# pandas varible objects
+# pandas variable objects
 data = pandas.read_csv("50_states.csv")
 states = data["state"].to_list()
 
