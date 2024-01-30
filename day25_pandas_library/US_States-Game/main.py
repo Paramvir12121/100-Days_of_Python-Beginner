@@ -47,9 +47,16 @@ while end_toggle == False:
 
     else:
         if answer_state in states:
+            screen.textinput(title="Guess the State", prompt="What's Another State")
             print("State already found!")
+        elif states == []:
+            print("All States found")
+            end_toggle = True
+
         else:
             print("No state with this name") 
+
+    
 
 
     
