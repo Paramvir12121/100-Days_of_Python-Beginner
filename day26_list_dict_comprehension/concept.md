@@ -8,3 +8,11 @@ It is a way to create a list from previous list.
 - Not limited to list, can also be a string, dict, etc
 
 - We can also set conditions to what could be added to the list eg. : new_list = [new_item for item in list if test]
+
+
+
+# Dictionary Comprehension
+it is used to create a Dict from list or dict
+- To create from list: new_dict = {new_key:new_value for item in list}
+
+-To create form dict: new_dict = {new_key:new_value for (key:value) in dict.items()}
