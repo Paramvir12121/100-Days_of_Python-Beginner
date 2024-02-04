@@ -15,5 +15,5 @@ It is a way to create a list from previous list.
 it is used to create a Dict from list or dict
 - To create from list: new_dict = {new_key:new_value for item in list}
 
-- To create form dict: new_dict = {new_key:new_value for (key:value) in dict.items()}
+- To create form dict: new_dict = {new_key:new_value for (key,value) in dict.items()}
 
