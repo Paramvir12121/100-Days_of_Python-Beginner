@@ -17,4 +17,3 @@ it is used to create a Dict from list or dict
 
 - To create form dict: new_dict = {new_key:new_value for (key:value) in dict.items()}
 
-- bit complex but usefull
