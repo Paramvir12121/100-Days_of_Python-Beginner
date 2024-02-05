@@ -5,6 +5,8 @@
 
 - You need to follow external system's rules.
 
+- APIs can take parameters to give more specific answer. Parameters can be optional or requeired.
+
 ## Response Code
 - 1XX : Hold On
 - 2XX : Here You GO, everything is alright
