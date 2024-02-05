@@ -27,16 +27,24 @@ response = requests.get(url="https://api.sunrise-sunset.org/json", params=parame
 response.raise_for_status()
 
 data = response.json()
+def is_night():
+    sunrise = float(data["results"]["sunrise"])
+    sunset = float(data["results"]["sunset"])
 
-sunrise = data["results"]["sunrise"]
-sunset = data["results"]["sunset"]
+    sunrise_hour = int(sunrise.split("T")[1].split(":")[0])
+    sunset_hour  = int(sunset.split("T")[1].split(":")[0])
+    print(sunrise_hour)
+    print(sunset_hour)
 
-sunrise_hour = sunrise.split("T")[1].split(":")[0]
-sunset_hour  = sunset.split("T")[1].split(":")[0]
-print(sunrise_hour)
-print(sunset_hour)
+    time_now = datetime.now()
+    hour_now = time_now.hour
+    print(hour_now)
+    if sunrise_hour <= hour
 
-time_now = datetime.now()
-hour_now = time_now.hour
-print(hour_now)
+
+
+# Check if your position is in +5 to -5 of long and lat
+def is_iss_close():
+    if my_lat-5 <= iss_lat <= my_lat+5 and my_longitute-5 <= iss_lng <= my_longitute+5:
+        return True
 
