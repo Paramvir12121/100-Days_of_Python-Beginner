@@ -2,16 +2,17 @@ import requests
 from datetime import datetime
 #  need to install package called requests (usually, it worked for me)
 
-# response = requests.get(url="http://api.open-notify.org/iss-now.json")
+response = requests.get(url="http://api.open-notify.org/iss-now.json")
 
-# # Raiseing excption with requests module
-# response.raise_for_status()
+# Raiseing excption with requests module
+response.raise_for_status()
 
-# print(response.content)
+iss_lat = response.json()["iss_position"]["latitude"]
+iss_lng = response.json()["iss_position"]["longitude"]
 
-# data = response.json()["iss_position"]
+print(iss_lat)
+print(iss_lng)
 
-# print(data)
 my_lat = 43.653225
 my_longitute = -79.383186
 
@@ -36,6 +37,6 @@ print(sunrise_hour)
 print(sunset_hour)
 
 time_now = datetime.now()
-
-print(time_now)
+hour_now = time_now.hour
+print(hour_now)
 
