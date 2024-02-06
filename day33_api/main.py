@@ -59,6 +59,7 @@ while True:
         print("Checking ISS location....")
         if is_iss_close() == True:
             print("Go outside!!! ISS is over you!!")
+            # USE SMTP to set up email to you account or text
         else:
             print("Sit down Choom! ISS is no where in sight")
     else:
