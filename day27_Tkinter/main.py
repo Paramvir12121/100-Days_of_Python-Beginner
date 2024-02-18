@@ -16,14 +16,11 @@ def button_click():
 
 input = Entry(width=20)
 input.pack()
-
 print(input.get())
 
 
 button = Button( text="Click Me", command=button_click)
 button.pack()
-
-
 
 
 # it has to be at the very end
