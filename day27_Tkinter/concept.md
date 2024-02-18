@@ -9,3 +9,4 @@ def add(*args):
 ```
 - We can have any number of arguments in the above function.
 - args notation is not strictly necessariry by * is.
+- args stors the variables in form of a tuple.
