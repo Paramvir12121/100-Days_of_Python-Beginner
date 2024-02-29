@@ -1,4 +1,5 @@
 venv*
 pandas_venv
 turtle_venv
+.env*
 
