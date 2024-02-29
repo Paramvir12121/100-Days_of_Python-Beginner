@@ -4,7 +4,7 @@ import os
 
 pixela_endpoint = "https://pixe.la/v1/users"
 load_dotenv()
-token = os.getenv('TOKEN')
+token = os.getenv('PIXELA_TOKEN')
 
 parameters = {
     "token": token,
