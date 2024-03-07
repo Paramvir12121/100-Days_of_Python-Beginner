@@ -8,6 +8,10 @@ print(__name__)
 def hello_world():
     return "<p>Hello, World!</p>"
 
+@app.route("/bye")
+def bye():
+    return "<p>Bye</p>"
+
 
 # to run whithout using cmd >flask --app hello run 
 # Allows to just use python hello.py
