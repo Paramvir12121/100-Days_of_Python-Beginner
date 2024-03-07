@@ -26,12 +26,22 @@ Each day of the course has its dedicated folder, named accordingly (`Day1`, `Day
 - Day 7 : Hangman (Nested loops)
 - Day 8 : Ceaser Cypher (Manipulating Arrays)
 - Day 9 :
-- Day 10 :
-- Day 11 :
-- Day 12 :
+- Day 10 : Calculator (Functions)
+- Day 11 : Blackjack *Capstone
+- Day 12 : Number Guessing Game
 - Day 13 :
 - Day 14 :
 - Day 15 :
+- Day 16 :
+- Day 17 :
+- Day 18 :
+- Day 19 :
+- Day 20 :
+- Day 25 : U.S. States Guessing Game ( Pandas, Turtle )
+- Day 27 : Mile To Km Converter GUI ( Tkinter, *args, **kwargs)
+- Day 33 : ISS Overhead Notifier (APIs)
+- Day 54 : Flask Webserver (Flask)
+
 
 ## 🚀 Getting Started
 
