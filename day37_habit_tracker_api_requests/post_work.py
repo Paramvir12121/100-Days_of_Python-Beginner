@@ -23,8 +23,6 @@ print(today)
 pixal_data = {
     "date": today,
     "quantity": "1",
-   
-
 }
 
 response = requests.post(url=graph2_endpoint,json=pixal_data,headers=headers)

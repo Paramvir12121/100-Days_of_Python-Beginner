@@ -1,16 +1,19 @@
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return render_template('hello.html')
 
 
 @app.route("/<name>/<int:number>")
 def greet(name,number):
     return f"<p>Hello {name}! You are {number} years old!</p>"
+
+# 
 
 
 
