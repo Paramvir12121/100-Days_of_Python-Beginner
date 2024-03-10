@@ -27,10 +27,6 @@ def greet(guess):
                "<img src='https://media.giphy.com/media/4T7e4DmcrP9du/giphy.gif'/>"
 
 
-# 
-
-
-
 # to run whithout using cmd >flask --app <filename> run 
 # Allows to just use python hello.py
 if __name__ == "__main__":
