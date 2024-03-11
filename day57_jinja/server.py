@@ -17,9 +17,10 @@ def guess(user_name):
         "name": user_name
     }
     response = requests.get("https://api.genderize.io",params=params)
-    genderize = response.json()
-    gender = genderize.gender
-    return render_template('guess.html',gender=gender)
+    gender = response.json()["gender"]
+    response = requests.get("https://api.agify.io",params=params)
+    age = response.json()["age"]
+    return render_template('guess.html',gender=gender,age=age)
 
 
 # to run whithout using cmd >flask --app <filename> run 
