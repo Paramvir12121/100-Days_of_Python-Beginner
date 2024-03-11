@@ -4,7 +4,7 @@ import random, time, requests
 app = Flask(__name__)
 
 @app.route("/")
-def hello_world():
+def home():
     random_number = random.randint(0,9)
     current_time = time.localtime()
     current_year = current_time.tm_year 
